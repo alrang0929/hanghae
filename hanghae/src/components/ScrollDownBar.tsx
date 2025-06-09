@@ -1,5 +1,4 @@
-import React from 'react'
-import '../styles/components/scroll-down-bar.scss'
+import './scroll-down-bar.scss';
 
 export const ScrollDownBar = () => {
   return (

@@ -1,8 +1,10 @@
+@import "../../styles//global.scss";
 // mainPage.scss
 
-.index-wrap {
+.main-page-wrapper {
   position: relative;
   height: 100vh;
+
   .title {
     &.image-box {
       position: absolute;
@@ -18,15 +20,18 @@
     }
   }
 
-  .text-wrap {
+  .text-contents-wrap {
+    @include flex-container($direction: row);
     position: absolute;
     top: 75%;
     left: 60%;
     translate: -50% -50%;
-    height: fit-content;
 
-    li:not(:first-child) {
-      line-height: 1.7;
+    .text-contents-list {
+      @include flex-container($direction: column);
+      li:not(:first-child) {
+        line-height: $line-height-md;
+      }
     }
   }
 

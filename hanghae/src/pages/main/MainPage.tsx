@@ -1,13 +1,9 @@
+import { MoveObject } from "./functions/MoveObject";
 import { ScrollDownBar } from "../../components/ScrollDownBar";
 import { LIST_ITEMS } from "../../data/menu";
 import TitleSvg from "../../assets/images/title.svg?react";
 import "./mainPage.scss";
 export const Main = () => {
-  const TITLE = {
-    src: "src/assets/images/title.svg",
-    alt: "title: hanghea",
-  };
-
   const BG_VIDEO = {
     src: "src/assets/233867_medium.mp4",
     alt: "background video: hanghae",
@@ -16,10 +12,20 @@ export const Main = () => {
 
   return (
     <>
-      <section className="index-wrap">
+      <section className="main-page-wrapper">
+        <MoveObject
+          initialTopPercent={110}
+          initialLeftPercent={85}
+          scrollFactorTop={0.01}
+          scrollFactorLeft={0.005}
+        >
+          <img src="src/assets/images/yacht.png" alt="요트 이미지" />
+        </MoveObject>
+        {/* <div className="move-objects">
+        </div> */}
         <div className="contents-wrap">
           <div className="title image-box">
-            <TitleSvg/>
+            <TitleSvg />
           </div>
         </div>
         <video
@@ -34,9 +40,9 @@ export const Main = () => {
           Your browser is not supported!
         </video>
 
-        <div className="text-wrap flex-box">
+        <div className="text-contents-wrap">
           <ScrollDownBar />
-          <ul className="flex-box column">
+          <ul className="text-contents-list">
             {LIST_ITEMS.map((item) => (
               <li key={item.id} className={item.className}>
                 {item.text}

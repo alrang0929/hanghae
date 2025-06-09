@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+//font-size(폰트사이즈 관련 변수)
+$ft-size-r: 1.6rem;
+$ft-size-md: 2rem;
+$ft-size-l: 3rem;
+$ft-size-xl: 4rem;
+$ft-size-xxl: 5rem;
+
+// line-height
+$line-height-r: 1.5;
+$line-height-md: 1.7;
+
+// font-family
+$ft-base: 'Pretendard';
+$ft-point:'Nanum Myeongjo';
+
+
+// color
+$color-ft-base: #D9E0E8;
+$color-black:#1C1C20;
+
+
+// Spacing Variables (간격 관련 변수)
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
+$spacing-xl: 4rem;
+
+// Container Widths (컨텐츠 랩 너비 관련 변수)
+$container-padding-desktop: 20rem;
+$container-padding-tablet: 5rem;
+$container-padding-mobile: 1rem;

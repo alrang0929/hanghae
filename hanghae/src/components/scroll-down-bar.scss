@@ -1,0 +1,40 @@
+@import '../styles/global.scss';
+
+.scroll-down-bar {
+  background-color: #fff;
+  width: 0.5px;
+  margin-right: $spacing-md;
+  position: relative;
+  overflow: hidden;
+  // opacity: 0.5;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    background-color: #fff;
+    height: 10px;
+    width: 3px;
+    opacity: 1;
+    animation: scrollDown 5s infinite linear;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    top: -20%;
+    opacity: 0; // 시작 시 투명
+  }
+
+  50% {
+    top: 30%;
+    height: 30px;
+    opacity: 1; // 끝까지 불투명 유지
+  }
+  100% {
+    height: 40px;
+    top: 150%;
+    opacity: 0; // 끝에서 투명
+  }
+}

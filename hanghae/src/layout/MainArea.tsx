@@ -1,10 +1,11 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Main } from "../pages/main/MainPage"
+import { WorkPage } from "../pages/worksPage/WorkPage"
 
 export const MainArea = () => {
   return (
 <main>
-    <Outlet/>
+    <Main/>
+    <WorkPage/>
 </main>
   )
 }

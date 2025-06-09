@@ -1,7 +1,7 @@
-import React from 'react'
+import './works-page.scss';
 
 export const WorkPage = () => {
   return (
-    <div>WorkPage</div>
+    <section className='work-page-wrapper'>WorkPage</section>
   )
 }
