@@ -1,0 +1,35 @@
+// base.scss
+
+.margin-H-R {
+  margin: 0 2rem;
+}
+
+.padding-V-R {
+  padding: 2rem 0;
+}
+
+.gap-H-R {
+  gap: 0 2rem;
+}
+
+.gap-V-R {
+  gap: 2rem 0;
+}
+
+.flex-box {
+  display: flex;
+  &.column{
+    flex-direction: column;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+}
+
+.grid-box {
+  display: grid;
+}
+
+.contents-wrap {
+  margin: 0 20rem;
+}
