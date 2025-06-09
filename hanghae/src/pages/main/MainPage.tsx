@@ -1,4 +1,4 @@
-import { MoveObject } from "./functions/MoveObject";
+import MoveObject from "./functions/MoveObject";
 import { ScrollDownBar } from "../../components/ScrollDownBar";
 import { LIST_ITEMS } from "../../data/menu";
 import TitleSvg from "../../assets/images/title.svg?react";
@@ -13,16 +13,13 @@ export const Main = () => {
   return (
     <>
       <section className="main-page-wrapper">
-        <MoveObject
-          initialTopPercent={110}
-          initialLeftPercent={85}
-          scrollFactorTop={0.01}
-          scrollFactorLeft={0.005}
-        >
-          <img src="src/assets/images/yacht.png" alt="요트 이미지" />
+        <MoveObject diagonalSpeedX={1}>
+          <img
+            src="src/assets/images/yacht.png"
+            alt="요트 이미지"
+            style={{ width: "300px" }}
+          />
         </MoveObject>
-        {/* <div className="move-objects">
-        </div> */}
         <div className="contents-wrap">
           <div className="title image-box">
             <TitleSvg />
