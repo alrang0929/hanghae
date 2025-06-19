@@ -13,11 +13,12 @@ export const Main = () => {
   return (
     <>
       <section className="main-page-wrapper">
-        <MoveObject diagonalSpeedX={1}>
+        {/* <MoveObject diagonalSpeedX={1}> */}
+        <MoveObject>
           <img
             src="src/assets/images/yacht.png"
             alt="요트 이미지"
-            style={{ width: "300px" }}
+            // style={{ width: "300px" }}
           />
         </MoveObject>
         <div className="contents-wrap">
